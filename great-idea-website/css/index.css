@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,25 +91,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -49,18 +136,192 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
 /* Your code starts here! */
+
+.wrapper {
+	margin-right: auto;
+	margin-left: auto;
+
+	max-width: 960px;
+
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
+/* --------Header  --------- */
+.color_head {
+	background-color: #ece8e8;
+	padding-bottom: 25px;
+}
+
+.header {
+	margin: auto;
+	width: 100%;
+	padding-top: 15px;
+
+}
+
+.nav {
+	width: 80%;
+	display: inline-block;
+	padding: 5px 0;
+
+}
+
+.nav a {
+	text-decoration: none;
+	color: #868383;
+	padding-right: 45px;
+}
+
+.nav a:hover {
+	color: white;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+
+.logo {
+	width: 15%;
+	display: inline-block;
+	padding-top: 10px;
+}
+
+
+/* --------Main_top--------- */
+
+.button {
+	background-color: white;
+	color: rgb(87, 81, 81);
+	border: 1px solid #868383;
+	padding: 4px 36px;
+}
+
+.button:hover {
+	background-color: gray;
+	color: white;
+	padding: 4px 38px;
+
+}
+
+.main_top {
+	margin: auto;
+	width: 100%;
+	padding: 70px 0;
+
+}
+
+.main_left {
+	width: 55%;
+	display: inline-block;
+	text-align: center;
+
+}
+
+.main_left h1 {
+	font-size: 370%;
+}
+
+.main_right {
+	width: 43%;
+	display: inline-block;
+}
+
+.main_right img {
+	max-width: 75%;
+	height: auto;
+}
+
+/* --------Main_top--------- */
+
+.box {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	margin-bottom: 30px;
+}
+
+/* --------Mid_top--------- */
+.f_a_mid {
+	margin: auto;
+	width: 100%;
+	padding: 35px 0;
+}
+
+.features {
+	max-width: 49%;
+	height: auto;
+	display: inline-block;
+	padding-right: 5%;
+}
+
+.about {
+	max-width: 49%;
+	height: auto;
+	display: inline-block;
+}
+
+p {
+	font-size: 90%;
+	font-family: 'Roboto Condensed',
+		sans-serif;
+}
+
+/* --------Mid_bottom--------- */
+
+
+.mid {
+	margin: auto;
+	width: 100%;
+	padding: 35px 0;
+}
+
+.mid_align {
+	max-width: 33%;
+	height: auto;
+	display: inline-block;
+	padding-right: 2%;
+}
+
+/* --------Footer--------- */
+
+.footer p {
+	padding-bottom: 10px;
+}
+
+.copy {
+	text-align: center;
+	margin-bottom: 75px;
+	font-size: 75%
+}
+
+
+/* ========= About ========== */
+
+.about_main_left {
+	width: 55%;
+	display: inline-block;
+	text-align: center;
+}
+
+.about_main_left h1 {
+	font-size: 800%;
+}
